@@ -1,57 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/css/rwd.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/css/rwd.css">
 </head>
 <body>
- 
-<h1 class="center">Personal Profile Web page </h1>
-<p class="center">
- 
-About Me <br>
-Education / Achievements: Best in Computer Programming 4, <br>
-    2nd Place in Web Design Competition hosted by JPCS <br> 
-Course: Bachelor of Science in Information Technology<br> 
-IT Experience: Basic Coding in Python, Java, Basic HTML and CSS<br>
-Hobbies & Interests: Photography, Video Games, Watching Films <br> 
-Goals In Life / Dream: One of my dream is to make my own game<br> 
-Picture Gallery <br>
- <img src="https://framerusercontent.com/images/lgqlgAvFLCT0bronQNxsEupoQs.webp" alt="Girl with a jacket" width="30%" height="auto">
-</p>
- 
- <div class="grid-container">
- 
-<div class="header"><h1>Chania</h1></div>
- 
-<div class="menu">
-<ul>
-<li>The Flight</li>
-<li>The City</li>
-<li>The Island</li>
-<li>The Food</li>
-</ul>
-</div>
- 
-<div class="content">
-<h1>The City</h1>
-<p>Chania is the capital of the Chania region on the island of Crete.</p>
-<p>The city can be divided in two parts, the old town and the modern city. The old town is situated next to the old harbour and is the matrix around which the whole urban area was developed.</p>
-<p>Chania lies along the north west coast of the island Crete.</p>
-</div>  
- 
-<div class="facts">
-<h2>Facts:</h2>
-<ul>
-<li>Chania is a city on the island of Crete</li>
-<li>Crete is a Greek island in the Mediterranean Sea</li>
-</ul>
-</div>
- 
-<div class="footer"><p>Resize the browser window to see the responsive effect.</p></div>
-</div>
-  
+
+    <div class="main-layout">
+        
+        <aside class="sidebar-nav">
+            <nav class="nav-links">
+                <a href="#about" class="nav-link active">About Me</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">IT Experience</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#goals" class="nav-link">Goals</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            
+            <div class="hero section-spy" id="about">
+                <h1>
+                    hey, my name is Timoteo Pelayo
+                </h1>
+                <h1>
+                    I am a 2nd year student at Asia Pacific College.
+                </h1>
+            </div>
+
+            <section id="education" class="section-spy">
+                <h2 class="section-header">Education & Achievements</h2>
+                
+                <div class="list-item">
+                    <div class="item-title">Bachelor of Science in Information Technology</div>
+                    <span class="item-subtitle">Current Course in Asia Pacific College</span>
+                </div>
+
+                <div class="list-item">
+                    <div class="item-title">Best in Computer Programming 4</div>
+                    <span class="item-subtitle">Academic Achievement in Senior High School</span>
+                </div>
+
+                <div class="list-item">
+                    <div class="item-title">2nd Place Web Design Competition</div>
+                    <span class="item-subtitle">Hosted by JPCS</span>
+                </div>
+            </section>
+
+            <section id="skills" class="section-spy">
+                <h2 class="section-header">IT Experience</h2>
+                
+                <div class="list-item">
+                    <div class="item-title">Programming Languages</div>
+                    <span class="item-subtitle">Basic Coding in Python & Java</span>
+                </div>
+
+                <div class="list-item">
+                    <div class="item-title">Web Development</div>
+                    <span class="item-subtitle">Basic HTML & CSS</span>
+                </div>
+            </section>
+
+            <section id="hobbies" class="section-spy">
+                <h2 class="section-header">Hobbies & Interests</h2>
+                <div class="brand-list">
+                    <span>Photography</span>
+                    <span>Video Games</span>
+                    <span>Watching Films</span>
+                </div>
+            </section>
+
+            <section id="goals" class="section-spy">
+                <h2 class="section-header">Goals in Life</h2>
+                <div class="list-item">
+                    <div class="item-title">Game Development</div>
+                    <span class="item-subtitle">One of my dreams is to make my own game.</span>
+                </div>
+            </section>
+
+            <section id="gallery" class="section-spy">
+                <h2 class="section-header">Picture Gallery</h2> 
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="DSC_6509.JPG" alt="Gallery Image 1"></div>
+                    <div class="gallery-item"><img src="DSC_6535.JPG" alt="Gallery Image 2"></div>
+                    <div class="gallery-item"><img src="DSC_6539.JPG" alt="Gallery Image 3"></div>
+                    <div class="gallery-item"><img src="DSC_6552.JPG" alt="Gallery Image 4"></div>
+                    <div class="gallery-item"><img src="DSC_6576.JPG" alt="Gallery Image 5"></div>
+                    <div class="gallery-item"><img src="DSC_6581.JPG" alt="Gallery Image 6"></div>
+                </div>
+            </section>
+
+            <section id="contact" class="section-spy">
+                <h2 class="section-header">Get In Touch</h2>
+                
+                <div class="list-item">
+                    <a href="https://www.instagram.com/handtheler/" target="_blank" class="contact-link">
+                        <div class="item-title">Instagram</div>
+                        <span class="item-subtitle">@handtheler</span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/sdcardreaderdslr/" target="_blank" class="contact-link">
+                        <div class="item-title">Photography Account</div>
+                        <span class="item-subtitle">@sdcardreaderdslr</span>
+                    </a>
+                </div>
+
+                <div class="list-item">
+                    <a href="https://www.linkedin.com/in/timoteo-pelayo-303906292/" target="_blank" class="contact-link">
+                        <div class="item-title">LinkedIn</div>
+                        <span class="item-subtitle">linkedin.com/in/timoteo-pelayo-303906292/</span>
+                    </a>
+                </div>
+
+                <div class="list-item">
+                    <a href="https://github.com/apctpelayo" target="_blank" class="contact-link">
+                        <div class="item-title">GitHub</div>
+                        <span class="item-subtitle">github.com/apctpelayo</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section-spy');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: "-20% 0px -60% 0px",
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        const id = entry.target.getAttribute('id');
+                        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
